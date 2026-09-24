@@ -1,4 +1,4 @@
-# Herbology OSINT Challenge — Answer Key (for you, not your players)
+# Herbology OSINT Challenge — Answer Key
 
 **Flag:** `witchacademy{h1dden_1n_pl41n_p3t4ls}`
 
