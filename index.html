@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Herbology &mdash; A Catalogue of Toxic Botanicals</title>
+<meta name="description" content="A restricted-shelf herbarium of beautiful, deadly flowers, catalogued for first-year Herbology students.">
+<meta name="author" content="Prof. M. Ravenwood, Herbology Chair &mdash; annotations withheld from the printed edition; see the archive, if you can find it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!--
+  A restricted archive sits just beyond this catalogue.
+  Its address is withheld from every page&mdash;but not from every file.
+  A crawler is told where NOT to go. Ask one what it was told.
+
+  d2l0Y2hhY2FkZW15e2gxZGRlbl8=
+-->
+
+</head>
+<body>
+
+<canvas id="spores" aria-hidden="true"></canvas>
+
+<header class="hero">
+  <svg class="hero__crest" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+    <circle cx="50" cy="50" r="34"/>
+    <path d="M50 20 C58 32 58 40 50 50 C42 40 42 32 50 20 Z"/>
+    <path d="M50 50 C58 60 58 68 50 80 C42 68 42 60 50 50 Z"/>
+    <path d="M20 50 C32 42 40 42 50 50 C40 58 32 58 20 50 Z"/>
+    <path d="M50 50 C60 42 68 42 80 50 C68 58 60 58 50 50 Z"/>
+    <circle cx="50" cy="50" r="4"/>
+  </svg>
+  <p class="hero__kicker">First-Year Herbology &middot; Restricted Shelf</p>
+  <h1>Beautiful <em>&amp; Deadly</em><br>A Grimoire of Poisonous Flowers</h1>
+  <p class="hero__sub">Seven specimens pressed, labelled, and sealed for study. Look closely &mdash; the prettiest petals in this academy are rarely the safest.</p>
+  <div class="hero__scroll" aria-hidden="true">
+    <span>descend</span>
+    <svg viewBox="0 0 14 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 0v18M2 13l5 5 5-5"/></svg>
+  </div>
+</header>
+
+<section class="foreword reveal">
+  <span class="eyebrow">A Note Before You Begin</span>
+  <p>Every student of Herbology learns the same lesson twice: once from a lecture, and once from a flower that did not forgive inattention. The specimens catalogued below were chosen for their charm as much as their cruelty &mdash; each is or has been grown in ordinary gardens, admired by ordinary people, who did not know what they were tending.</p>
+  <p>Click or tap a specimen to turn it over. Read the field notes. Touch nothing in the actual greenhouse.</p>
+  <span class="signature">&mdash; Prof. M. Ravenwood</span>
+</section>
+
+<main class="catalogue">
+  <div class="catalogue__head reveal">
+    <span class="eyebrow">The Catalogue</span>
+    <h2>Seven Specimens, Pressed &amp; Labelled</h2>
+  </div>
+
+  <div class="grid">
+
+    <!-- 01 — Angel's Trumpet -->
+    <article class="specimen reveal" tabindex="0">
+      <div class="specimen__inner">
+        <div class="specimen__face">
+          <div class="specimen__tag">
+            <span>No. 01</span>
+            <span class="specimen__seal tox-lethal" title="Toxicity: Lethal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+            </span>
+          </div>
+          <div class="specimen__art">
+            <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M100 20 C70 40 55 75 55 110 C55 150 78 178 100 190 C122 178 145 150 145 110 C145 75 130 40 100 20 Z"/>
+              <path d="M62 105 C75 95 125 95 138 105" />
+              <path d="M100 20 L100 190" stroke-dasharray="2 4" opacity="0.5"/>
+              <path d="M100 20 C95 8 105 8 100 20 Z"/>
+              <path d="M55 110 C40 108 30 100 22 88" />
+              <path d="M145 110 C160 108 170 100 178 88" />
+            </svg>
+          </div>
+          <div class="specimen__names">
+            <span class="specimen__latin">Brugmansia spp.</span>
+            <span class="specimen__common">Angel&rsquo;s Trumpet</span>
+          </div>
+          <p class="specimen__hint">turn for field notes</p>
+        </div>
+        <div class="specimen__face specimen__face--back">
+          <span class="specimen__latin-back">Brugmansia spp.</span>
+          <p class="specimen__field-label">Description</p>
+          <p>Pendulous, trumpet-shaped blooms up to a foot long, drooping from woody shrubs. Sweetly fragrant by night, when the flowers open fully to lure moths.</p>
+          <p class="specimen__field-label">Toxicity</p>
+          <p>Every part contains tropane alkaloids &mdash; scopolamine, atropine, hyoscyamine. Ingestion causes delirium, hallucination, paralysis of the gut, and in sufficient dose, death.</p>
+          <p class="specimen__field-label">Field Notes</p>
+          <p>Old apothecaries called it a component of &ldquo;flying ointments,&rdquo; rubbed onto skin rather than swallowed. Witches, allegedly, did not fly so much as dream that they did.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 — Oleander -->
+    <article class="specimen reveal" tabindex="0">
+      <div class="specimen__inner">
+        <div class="specimen__face">
+          <div class="specimen__tag">
+            <span>No. 02</span>
+            <span class="specimen__seal tox-lethal" title="Toxicity: Lethal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+            </span>
+          </div>
+          <div class="specimen__art">
+            <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6">
+              <g transform="translate(100,105)">
+                <path d="M0 -55 C14 -30 14 -10 0 0 C-14 -10 -14 -30 0 -55 Z"/>
+                <path d="M0 -55 C14 -30 14 -10 0 0 C-14 -10 -14 -30 0 -55 Z" transform="rotate(72)"/>
+                <path d="M0 -55 C14 -30 14 -10 0 0 C-14 -10 -14 -30 0 -55 Z" transform="rotate(144)"/>
+                <path d="M0 -55 C14 -30 14 -10 0 0 C-14 -10 -14 -30 0 -55 Z" transform="rotate(216)"/>
+                <path d="M0 -55 C14 -30 14 -10 0 0 C-14 -10 -14 -30 0 -55 Z" transform="rotate(288)"/>
+                <circle r="6"/>
+              </g>
+              <path d="M100 160 L100 105" stroke-dasharray="2 4" opacity="0.5"/>
+              <path d="M100 150 C80 145 70 155 60 165" />
+              <path d="M100 140 C120 135 130 145 140 155" />
+            </svg>
+          </div>
+          <div class="specimen__names">
+            <span class="specimen__latin">Nerium oleander</span>
+            <span class="specimen__common">Oleander</span>
+          </div>
+          <p class="specimen__hint">turn for field notes</p>
+        </div>
+        <div class="specimen__face specimen__face--back">
+          <span class="specimen__latin-back">Nerium oleander</span>
+          <p class="specimen__field-label">Description</p>
+          <p>A tidy, evergreen shrub with narrow leaves and clusters of five-petaled pink, white, or red flowers, planted along roadsides for its indifference to drought and neglect.</p>
+          <p class="specimen__field-label">Toxicity</p>
+          <p>Every part &mdash; leaf, stem, sap, smoke of burnt wood &mdash; carries cardiac glycosides. A single leaf, chewed by a child or a curious pet, has been enough to kill.</p>
+          <p class="specimen__field-label">Field Notes</p>
+          <p>Its beauty is precisely the trap: municipal planters full of a poison ranked among the deadliest ornamentals grown anywhere in the world.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 — Deadly Nightshade -->
+    <article class="specimen reveal" tabindex="0">
+      <div class="specimen__inner">
+        <div class="specimen__face">
+          <div class="specimen__tag">
+            <span>No. 03</span>
+            <span class="specimen__seal tox-lethal" title="Toxicity: Lethal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+            </span>
+          </div>
+          <div class="specimen__art">
+            <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M100 60 C85 68 80 85 88 100 C93 110 107 110 112 100 C120 85 115 68 100 60 Z"/>
+              <path d="M100 100 L100 130" stroke-dasharray="2 4" opacity="0.5"/>
+              <circle cx="92" cy="150" r="10"/>
+              <circle cx="112" cy="158" r="10"/>
+              <circle cx="100" cy="172" r="10"/>
+              <path d="M92 140 L100 130 L112 148" />
+            </svg>
+          </div>
+          <div class="specimen__names">
+            <span class="specimen__latin">Atropa belladonna</span>
+            <span class="specimen__common">Deadly Nightshade</span>
+          </div>
+          <p class="specimen__hint">turn for field notes</p>
+        </div>
+        <div class="specimen__face specimen__face--back">
+          <span class="specimen__latin-back">Atropa belladonna</span>
+          <p class="specimen__field-label">Description</p>
+          <p>Small, bell-shaped purple-brown flowers give way to glossy black berries, sweet enough to tempt a child and dangerous enough to end that child&rsquo;s afternoon in a hospital.</p>
+          <p class="specimen__field-label">Toxicity</p>
+          <p>Atropine is the namesake alkaloid, once dosed deliberately to dilate the pupils. In excess it brings racing pulse, fever, hallucination, coma.</p>
+          <p class="specimen__field-label">Field Notes</p>
+          <p>&ldquo;Bella donna&rdquo; &mdash; beautiful woman. Renaissance ladies dropped its juice into their eyes for a wide, dark, fashionable stare, and paid for the fashion in blurred vision.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 — Foxglove -->
+    <article class="specimen reveal" tabindex="0">
+      <div class="specimen__inner">
+        <div class="specimen__face">
+          <div class="specimen__tag">
+            <span>No. 04</span>
+            <span class="specimen__seal tox-severe" title="Toxicity: Severe">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+            </span>
+          </div>
+          <div class="specimen__art">
+            <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M100 10 L100 190" stroke-dasharray="2 4" opacity="0.5"/>
+              <path d="M100 40 C88 44 84 56 92 62 C100 66 108 60 106 50 C104 42 100 40 100 40Z"/>
+              <path d="M100 70 C86 74 81 88 90 95 C99 100 108 93 106 82 C104 73 100 70 100 70Z"/>
+              <path d="M100 102 C84 107 79 122 89 130 C99 136 109 128 106 116 C103 106 100 102 100 102Z"/>
+              <path d="M100 136 C82 142 76 158 87 167 C98 174 109 165 106 152 C103 141 100 136 100 136Z"/>
+            </svg>
+          </div>
+          <div class="specimen__names">
+            <span class="specimen__latin">Digitalis purpurea</span>
+            <span class="specimen__common">Foxglove</span>
+          </div>
+          <p class="specimen__hint">turn for field notes</p>
+        </div>
+        <div class="specimen__face specimen__face--back">
+          <span class="specimen__latin-back">Digitalis purpurea</span>
+          <p class="specimen__field-label">Description</p>
+          <p>A tall biennial spire lined with dozens of speckled, thimble-shaped bells, rising from cottage gardens and woodland edges alike.</p>
+          <p class="specimen__field-label">Toxicity</p>
+          <p>Digoxin and related cardiac glycosides slow and disrupt the heart. The margin between a therapeutic dose and a fatal one is famously narrow.</p>
+          <p class="specimen__field-label">Field Notes</p>
+          <p>Medicine and poison from the same leaf: digitalis remains a treatment for certain heart conditions, prescribed in doses measured to the milligram.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 — Wolfsbane / Monkshood -->
+    <article class="specimen reveal" tabindex="0">
+      <div class="specimen__inner">
+        <div class="specimen__face">
+          <div class="specimen__tag">
+            <span>No. 05</span>
+            <span class="specimen__seal tox-lethal" title="Toxicity: Lethal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+            </span>
+          </div>
+          <div class="specimen__art">
+            <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M100 130 L100 190" stroke-dasharray="2 4" opacity="0.5"/>
+              <path d="M75 90 C70 60 80 40 100 35 C120 40 130 60 125 90 C125 110 112 122 100 130 C88 122 75 110 75 90 Z"/>
+              <path d="M75 90 C60 92 50 88 42 78" />
+              <path d="M125 90 C140 92 150 88 158 78" />
+              <path d="M85 75 C90 65 110 65 115 75" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="specimen__names">
+            <span class="specimen__latin">Aconitum napellus</span>
+            <span class="specimen__common">Wolfsbane &middot; Monkshood</span>
+          </div>
+          <p class="specimen__hint">turn for field notes</p>
+        </div>
+        <div class="specimen__face specimen__face--back">
+          <span class="specimen__latin-back">Aconitum napellus</span>
+          <p class="specimen__field-label">Description</p>
+          <p>Deep violet flowers shaped like a monk&rsquo;s hood, arranged along a stout, upright stem in cool, damp gardens and mountain meadows.</p>
+          <p class="specimen__field-label">Toxicity</p>
+          <p>Aconitine can absorb through unbroken skin. Numbness, paralysis, and cardiac arrest follow &mdash; among the most lethal alkaloids in the plant kingdom.</p>
+          <p class="specimen__field-label">Field Notes</p>
+          <p>Named for wolves and worn by monks alike in folklore; arrow-tips were once dipped in its root. Garden gloves are not a suggestion here &mdash; they are policy.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 06 — Lily of the Valley -->
+    <article class="specimen reveal" tabindex="0">
+      <div class="specimen__inner">
+        <div class="specimen__face">
+          <div class="specimen__tag">
+            <span>No. 06</span>
+            <span class="specimen__seal tox-severe" title="Toxicity: Severe">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+            </span>
+          </div>
+          <div class="specimen__art">
+            <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M60 170 C60 120 90 90 130 70" stroke-dasharray="2 4" opacity="0.5"/>
+              <circle cx="120" cy="75" r="9"/>
+              <circle cx="105" cy="90" r="9"/>
+              <circle cx="93" cy="107" r="9"/>
+              <circle cx="82" cy="126" r="9"/>
+              <circle cx="72" cy="147" r="9"/>
+              <path d="M60 170 C40 165 30 175 18 180" />
+              <path d="M60 170 C50 190 65 195 75 185" />
+            </svg>
+          </div>
+          <div class="specimen__names">
+            <span class="specimen__latin">Convallaria majalis</span>
+            <span class="specimen__common">Lily of the Valley</span>
+          </div>
+          <p class="specimen__hint">turn for field notes</p>
+        </div>
+        <div class="specimen__face specimen__face--back">
+          <span class="specimen__latin-back">Convallaria majalis</span>
+          <p class="specimen__field-label">Description</p>
+          <p>A gentle arch of small white bells, achingly fragrant, spilling from broad green leaves in shaded corners of temperate gardens each spring.</p>
+          <p class="specimen__field-label">Toxicity</p>
+          <p>Convallatoxin and related glycosides affect the heart much as foxglove&rsquo;s do. The water in a vase of cut stems becomes dangerous in its own right.</p>
+          <p class="specimen__field-label">Field Notes</p>
+          <p>A traditional wedding flower, prized for meaning &ldquo;return of happiness.&rdquo; No bouquet in this academy&rsquo;s history has ever been eaten, and it should stay that way.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 07 — Autumn Crocus -->
+    <article class="specimen reveal" tabindex="0">
+      <div class="specimen__inner">
+        <div class="specimen__face">
+          <div class="specimen__tag">
+            <span>No. 07</span>
+            <span class="specimen__seal tox-lethal" title="Toxicity: Lethal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
+            </span>
+          </div>
+          <div class="specimen__art">
+            <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.6" role="img">
+              <!-- A specimen pressed without its leaves, as this species always blooms. -->
+              <title>field-note: check what a crocus shows when it has nothing left to hide // pl41n_</title>
+              <path d="M100 60 L100 150" stroke-dasharray="2 4" opacity="0.5"/>
+              <path d="M100 60 C88 75 88 100 100 120 C112 100 112 75 100 60 Z"/>
+              <path d="M100 60 C88 75 88 100 100 120 C112 100 112 75 100 60 Z" transform="rotate(60 100 90)"/>
+              <path d="M100 60 C88 75 88 100 100 120 C112 100 112 75 100 60 Z" transform="rotate(120 100 90)"/>
+              <path d="M100 60 C88 75 88 100 100 120 C112 100 112 75 100 60 Z" transform="rotate(180 100 90)"/>
+              <path d="M100 60 C88 75 88 100 100 120 C112 100 112 75 100 60 Z" transform="rotate(240 100 90)"/>
+              <path d="M100 60 C88 75 88 100 100 120 C112 100 112 75 100 60 Z" transform="rotate(300 100 90)"/>
+            </svg>
+          </div>
+          <div class="specimen__names">
+            <span class="specimen__latin">Colchicum autumnale</span>
+            <span class="specimen__common">Autumn Crocus</span>
+          </div>
+          <p class="specimen__hint">turn for field notes</p>
+        </div>
+        <div class="specimen__face specimen__face--back">
+          <span class="specimen__latin-back">Colchicum autumnale</span>
+          <p class="specimen__field-label">Description</p>
+          <p>Pale lilac, crocus-like blooms that rise from bare soil in early autumn, with no leaves in sight &mdash; those appeared and vanished back in spring.</p>
+          <p class="specimen__field-label">Toxicity</p>
+          <p>Colchicine resembles no antidote known to this academy&rsquo;s infirmary. It has repeatedly been mistaken, fatally, for saffron crocus and wild garlic by foragers who did not look closely enough.</p>
+          <p class="specimen__field-label">Field Notes</p>
+          <p>A plant that hides its leaves is a plant worth a second look. Sometimes what a specimen omits tells you more than what it shows.</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; The Academy Herbarium &mdash; Restricted Shelf, Herbology Wing</p>
+  <span class="restricted">This catalogue&rsquo;s companion archive is not indexed. It exists all the same.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

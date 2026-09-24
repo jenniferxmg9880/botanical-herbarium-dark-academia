@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Restricted Archive &mdash; Herbology Wing</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .restricted-page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 14vh 6vw 10vh;
+    position: relative;
+    z-index: 1;
+  }
+  .restricted-page h1 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    color: var(--parchment);
+    margin-bottom: 1.6rem;
+  }
+  .restricted-page p { font-size: 1.15rem; color: var(--parchment-dim); }
+  .fragment {
+    margin: 2rem 0;
+    padding: 1.1rem 1.3rem;
+    border: 1px dashed rgba(198,164,86,0.4);
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: var(--gold);
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+<canvas id="spores" aria-hidden="true"></canvas>
+<div class="restricted-page">
+  <span class="eyebrow">Archive Access Granted</span>
+  <h1>You were not meant to find this page &mdash; and yet, here you are.</h1>
+  <p>An honest crawler obeys what robots.txt tells it to avoid. A curious student reads the same file and goes looking on purpose. Consider this your reward for reading the instructions meant to keep you out.</p>
+  <div class="fragment">1n_</div>
+  <p>One specimen in the catalogue was pressed without its leaves &mdash; a plant that hides part of itself in plain sight. Its illustration holds more than a shape. Inspect it closely, the way you would inspect anything whose metadata might not match what's on the label.</p>
+  <p>When you've gathered every fragment, the console of the main page has one more word for you.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
